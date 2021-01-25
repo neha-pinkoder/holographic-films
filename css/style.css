@@ -204,7 +204,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #27D5AB);
   background-size: 200% 200%;
   animation: change 2s ease-in-out infinite;
 }
@@ -215,6 +214,7 @@ body{
 .responsive-image {
   max-width: 100%;
 }
+
 .cell img {
   display: block;
 }
@@ -223,10 +223,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
   }
   .cell {
     width:50%;
-    border: black solid;
+    border: 1rem solid black ;
   }
 }
 @media screen and (min-width: 1000px){
@@ -236,22 +237,33 @@ body{
 }
 .cell {
   margin: 1rem;
-  border: black solid;
+  border: 1rem solid black;
 }
 
 @media screen and (min-width: 600px){
   .cell {
     width: calc(50% - 2rem);
-    border: black solid;
+    border: 1rem solid black;
+    margin: 3rem;
   }
 }
 @media screen and (min-width: 1000px){
   .cell{
     width: calc(33.3333% - 2rem);
-    border: black solid;
+    border: 1rem solid black;
   }
 }
 
+.module-border-wrap {
+  max-width: 300px;
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #27D5AB);
+  background-size: 300% 300%;
+  animation: change 2s ease-in-out infinite;
+  border: 0;
+  margin: 2rem;
+}
 /* animated border */
 
 
